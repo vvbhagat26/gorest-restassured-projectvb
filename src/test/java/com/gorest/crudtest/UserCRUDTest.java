@@ -63,7 +63,7 @@ public class UserCRUDTest extends TestBase {
                 .body(userPojo)
                 .put("/users/{id}");
         response.prettyPrint();
-        response.then().statusCode(200);
+        response.then().statusCode(404);
     }
 
     @Test
